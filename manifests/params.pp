@@ -56,7 +56,6 @@ class infiniband::params {
                                     'librdmacm-dev',
                                     'librdmacm1',
                                     'rdmacm-utils',
-                                    'ofed-docs',
                                     'libopensm5a',
                                     ],
         default => []

@@ -53,9 +53,8 @@ inherits infiniband::params
     info ("Configuring infiniband::subnetmanager (with ensure = ${ensure})")
 
     # ensure the presence (or absence) of infiniband
-    $ensure = $::infiniband_ensure ? {
-        ''      => 'present',
-        default => $::infiniband_ensure
+    if ! ($ensure in [ 'present', 'absent' ]) {
+        fail("infiniband 'ensure' parameter must be set to either 'absent' or 'present'")
     }
 
     case $::operatingsystem {

@@ -42,8 +42,6 @@ class infiniband::params {
                                     'libdapl-dev',
                                     'libdapl2',
                                     'ibutils',
-                                    'libibcommon-dev',
-                                    'libibcommon1',
                                     'libibmad5',
                                     'libibmad-dev',
                                     'libibumad3',

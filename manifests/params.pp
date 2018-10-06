@@ -44,9 +44,9 @@ class infiniband::params {
                                     'ibutils',
                                     'libibcommon-dev',
                                     'libibcommon1',
-                                    'libibmad1',
+                                    'libibmad5',
                                     'libibmad-dev',
-                                    'libibumad1',
+                                    'libibumad3',
                                     'libibumad-dev',
                                     'ibverbs-utils',
                                     'libibverbs-dev',
@@ -58,7 +58,7 @@ class infiniband::params {
                                     'rdmacm-utils',
                                     'libsdp1',
                                     'ofed-docs',
-                                    'libopensm2',
+                                    'libopensm5a',
                                     ],
         default => []
     }

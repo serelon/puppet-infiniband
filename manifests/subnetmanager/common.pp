@@ -16,7 +16,7 @@ class infiniband::subnetmanager::common {
     require ::infiniband::params
 
     package { 'opensm':
-        ensure => $infiniband::ensure
+        ensure => $infiniband::ensure,
         name   => $infiniband::params::sm_packagename,
     }
 
